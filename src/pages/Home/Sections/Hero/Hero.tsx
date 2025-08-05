@@ -32,7 +32,7 @@ export const Hero:React.FC = () => {
                         
                         <Grid container display="flex" justifyContent="center" spacing={2} paddingTop={3}>
                             <Grid size={{xs: 12, md: 4}} display="flex" justifyContent="center">
-                                <StyledButton>
+                                <StyledButton onClick={ () => console.log("donwload")}>
                                     <DownloadIcon />
                                     <Typography>
                                         Download CV
@@ -41,7 +41,7 @@ export const Hero:React.FC = () => {
                             </Grid>
 
                             <Grid size={{ xs: 12, md: 4}} display="flex" justifyContent="center">
-                                <StyledButton>
+                                <StyledButton onClick={ () => console.log("Email")}>
                                     <EmailIcon />
                                     <Typography>
                                         Contact Me
