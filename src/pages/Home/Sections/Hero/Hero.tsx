@@ -5,6 +5,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
 import { StyledButton } from "../../../../components/StyledButton/StyledButton";
 import CV from "../../../../assets/pdfs/Caio_Silva_.pdf"
+import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackgroun";
 
 export const Hero:React.FC = () => {
 
@@ -37,16 +38,15 @@ export const Hero:React.FC = () => {
             <Container maxWidth="lg">
                 <Grid container >
                     <Grid size={{ xs: 12, md: 5 }} display="flex" justifyContent="center">
-                        <Box position="relative">
-                            <Box position="absolute" width="100%" top="-100" right={0}>
-                                
-                            </Box>
+                        <Box width={"150%"} position="relative" top={-100} right={0}>
+                                <Box width={"150%"} position="absolute" top={-100} right={0}>
+                                    <AnimatedBackground />
+                                </Box>
+                                <Box position="absolute" textAlign="center">
+                                    <S.StyledImg src={Avatar} />
+                                </Box>
 
-                            <Box position="absolute" textAlign="center">
-                                <S.StyledImg src={Avatar}/>
-                            </Box>
-
-                        </Box>
+                        </Box>  
 
                         
                     </Grid>
