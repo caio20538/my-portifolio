@@ -4,8 +4,32 @@ import * as S from "./style";
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
 import { StyledButton } from "../../../../components/StyledButton/StyledButton";
+import CV from "../../../../assets/pdfs/Caio_Silva_.pdf"
 
 export const Hero:React.FC = () => {
+
+    const handleDownload = () => {
+        console.log("download")
+        // Create a link element
+        const link = document.createElement('a');
+        link.href = CV
+        link.download = 'Caio_Silva.pdf'; // Set the download attribute to specify the file name
+        // Append the link to the body
+        document.body.appendChild(link);
+        // Trigger the click event
+        link.click();
+        // Remove the link from the body
+        document.body.removeChild(link);
+    };
+
+    const handleEmail = () => {
+        const emailAddress = 'caio20538@gmail.com';
+        const subject = 'Subject';
+        const body = 'Hello! I saw your portfolio...';
+
+        const mailtoLink = `mailto:${emailAddress}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        window.open(mailtoLink);
+    }
 
   return (
     <>
@@ -32,7 +56,7 @@ export const Hero:React.FC = () => {
                         
                         <Grid container display="flex" justifyContent="center" spacing={2} paddingTop={3}>
                             <Grid size={{xs: 12, md: 4}} display="flex" justifyContent="center">
-                                <StyledButton onClick={ () => console.log("donwload")}>
+                                <StyledButton onClick={ () => handleDownload()}>
                                     <DownloadIcon />
                                     <Typography>
                                         Download CV
@@ -41,7 +65,7 @@ export const Hero:React.FC = () => {
                             </Grid>
 
                             <Grid size={{ xs: 12, md: 4}} display="flex" justifyContent="center">
-                                <StyledButton onClick={ () => console.log("Email")}>
+                                <StyledButton onClick={ () => handleEmail()}>
                                     <EmailIcon />
                                     <Typography>
                                         Contact Me
