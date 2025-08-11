@@ -14,7 +14,7 @@ export const About: React.FC = () =>{
 
     return(
         <>
-            <Container maxWidth="lg">
+            <Container maxWidth="lg" >
                 <Box id="about" pt={5} mb={3}>
                     <Typography variant="h2" textAlign="center">About me</Typography>
                 </Box>
