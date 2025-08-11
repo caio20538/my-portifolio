@@ -1,69 +1,92 @@
-# React + TypeScript + Vite
+# Meu Portfólio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o meu portfólio pessoal, desenvolvido com React, Vite, TypeScript e Material-UI. Aqui você pode conhecer meus projetos, habilidades e um pouco sobre minha trajetória profissional.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Tecnologias Utilizadas
 
-## Expanding the ESLint configuration
+- **React** — Biblioteca JavaScript para construção de interfaces de usuário.
+- **Vite** — Ferramenta de build ultra rápida para projetos modernos.
+- **TypeScript** — Superset do JavaScript que adiciona tipagem estática.
+- **Material-UI (MUI)** — Biblioteca de componentes React com design baseado no Material Design.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Site em Produção
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+Você pode acessar meu portfólio online neste link:  
+[https://caio20538.github.io/my-portifolio](https://caio20538.github.io/my-portifolio)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+---
+
+## Funcionalidades
+
+- Navegação simples e responsiva.
+- Seção sobre mim, destacando minhas habilidades e experiência.
+- Lista de projetos com descrições e links para repositórios e demonstrações.
+- Contato para facilitar conexões profissionais.
+- Tema claro e escuro (se aplicável).
+
+---
+
+## Como Rodar Localmente
+
+1. Clone este repositório:
+
+```bash
+git clone https://github.com/caio20538/my-portifolio.git
+cd my-portifolio
+````
+
+2. Instale as dependências:
+
+```bash
+npm install
+# ou
+yarn
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+3. Inicie o servidor de desenvolvimento:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm run dev
+# ou
+yarn dev
 ```
+
+4. Abra o navegador em `http://localhost:5173` para visualizar o portfólio.
+
+---
+
+## Build para Produção
+
+Para gerar os arquivos otimizados para produção:
+
+```bash
+npm run build
+# ou
+yarn build
+```
+
+Os arquivos serão gerados na pasta `dist`.
+
+---
+
+## Contato
+
+Sinta-se à vontade para entrar em contato:
+
+* Email: [caio20538@gmail.com](mailto:caio20538@gmail.com)
+* LinkedIn: [[https://www.linkedin.com/in/seu-perfil](https://www.linkedin.com/in/caio-silva-397301254)]
+* GitHub: [https://github.com/caio20538](https://github.com/caio20538)
+
+---
+
+## Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+Obrigado por visitar meu portfólio!
