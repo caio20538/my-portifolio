@@ -16,7 +16,7 @@ export const About: React.FC = () =>{
         <>
             <Container maxWidth="lg" >
                 <Box id="about" pt={5} mb={3}>
-                    <Typography variant="h2" textAlign="center">About me</Typography>
+                    <Typography variant="h2" textAlign="center" >About me</Typography>
                 </Box>
 
                 <Grid container spacing={2} display="flex" justifyContent="center" pb={3}>
