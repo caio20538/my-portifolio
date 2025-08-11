@@ -4,7 +4,7 @@ import * as S from "./style";
 import DownloadIcon from '@mui/icons-material/Download';
 import EmailIcon from '@mui/icons-material/Email';
 import { StyledButton } from "../../../../components/StyledButton/StyledButton";
-import CV from "../../../../assets/pdfs/Caio_Silva_.pdf"
+import CV from "../../../../assets/pdfs/Caio-Silva.pdf"
 import { AnimatedBackground } from "../../../../components/AnimatedBackground/AnimatedBackgroun";
 
 export const Hero:React.FC = () => {
@@ -38,7 +38,7 @@ export const Hero:React.FC = () => {
             <Container maxWidth="lg">
                 <Grid container >
                     <Grid size={{ xs: 12, md: 5 }} display="flex" justifyContent="center">
-                        <Box width={"150%"} position="relative" top={-100} right={0}>
+                        <Box width={"150%"} paddingBottom={{xs: "300px", md: "0"}} position="relative" top={-100} right={0}>
                                 <Box width={"150%"} position="absolute" top={-100} right={0}>
                                     <AnimatedBackground />
                                 </Box>
